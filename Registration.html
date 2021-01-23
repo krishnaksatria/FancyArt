@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
+    <script src="regis.js"></script>
+    <title>Registration</title>
+</head>
+<body>
+    <div class="header">
+        <img class="logo" src="assets/logo.png" alt="" >
+        <img class="cart" src="assets/Cart.png" alt="">
+        <img class="acc" src="assets/Account.png" alt="">
+    </div>
+    <div class="navbar">
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="Galleries.html">Galleries</a></li>
+            <li class="auctions"><a href="Auctions.html">Auctions</a>
+                <ul>
+                    <li><a href="Ongoing.html">Ongoing</a></li>
+                    <li><a href="Oncoming.html">Oncoming</a></li>
+                </ul>
+            </li>
+            <li><a href="Registration.html">Registration</a></li>
+            <li><a href="About Us.html">About Us</a></li>
+        </ul>
+    </div>
+        <form id="regisContainer" name="regisContainer">
+            <div><label>Name</label><br>
+                <input type="text" placeholder="Fullname" id="name">
+                <hr>
+            </div>
+            <div><label>Email</label><br>
+                <input type="text" placeholder="example@gmail.com" id="email">
+                <hr>
+            </div>
+            <div><label>Password</label><br>
+                <input type="text" placeholder="" id="pass1">
+                <hr>
+            </div>
+            <div><label>Confirmation Password</label><br>
+                <input type="text" placeholder="Re-Enter your password" id="pass2">
+                <hr>
+            </div>
+            <div><label>Country</label><br>
+                <input type="text" placeholder="example : Indonesia" id="country">
+                <hr>
+            </div>
+            <div><label>Art Preferences</label><br>
+                <div>
+                    <input type="radio" name="Renaissance" id="Renaissance">
+                    <span>Renaissance</span>
+                </div>
+                <div>
+                    <input type="radio" name="Cubism" id="Cubism">
+                    <span>Cubism</span>
+                </div>
+                <div>
+                    <input type="radio" name="Abstract" id="Abstract">
+                    <span>Abstract Art</span>
+                </div>
+                <div>
+                    <input type="radio" name="Traditional" id="Traditional">
+                    <span>Traditional Art</span>
+                </div>
+                <div>
+                    <input type="radio" name="Impressionism" id="Impressionism">
+                    <span>Impressionism</span>
+                </div>
+                <div class="helper" >
+                    <input type="radio" name="Surrealism" id="Surrealism">
+                    <span>Surrealism</span>
+                </div>
+                <hr>
+            </div>
+                <label for="Address">Address</label>
+                <div>
+                    <textarea name="add" id="address" placeholder="Street"></textarea>
+                </div>
+                <hr>
+            </div>
+            <div>
+                <label>
+                    <input type="checkbox" id="validate">
+                    <span class="checkboxText">
+                        I Agree with the Terms and Condition
+                    </span>
+                </label>
+            </div>
+            <center>
+            <div>
+                <input type="button" id="submitbutton" onclick="submitBtn()" value="Submit">
+                <input type="reset" id="resetbutton" onclick="resetBtn()">
+            </div>
+            <div id=result></div>
+            </center>
+            <script src="regis.js"></script>
+        </form>
+    <div class="footer">Copyright &copy; 2020 Fancy Art, Inc. All Rights Reserved</div>
+</body>
+</html>

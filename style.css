@@ -1,0 +1,369 @@
+*{
+    font-family: 'Comic Sans MS';
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.header{
+    width: 100%;
+    height: 75px;
+}
+
+.logo{
+    width: 75px;
+    height: 75px;
+    margin-left: 150px;
+}
+
+.cart{
+    float: right;
+    margin-right: 150px;
+    width: 55px;
+    height: 55px;
+    margin-top: 10px;
+}
+
+.acc{
+    float: right;
+    width: 75px;
+    height: 55px;
+    margin-top: 10px;
+}
+
+.navbar{
+    background-color: #083b66;
+    color: white;
+    width: 100%;
+    height: 50px;
+    position: sticky;
+}
+
+.navbar ul{
+    margin-left: 50px;
+}
+
+.navbar ul li{
+    display: list-item;
+    float: left;
+    height: 50px;
+    width: 150px;
+    list-style-type: none;
+    text-align: center;
+    line-height: 50px;
+}
+
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li:hover{
+    background-color: aqua;
+}
+
+.auctions ul{
+    position: absolute;
+    margin-left: 0px;
+    display: grid;
+    visibility: hidden;
+    background-color: #083b66;
+    width: 150px;
+}
+
+.auctions li{
+    width: 150px;
+}
+
+.auctions:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+
+.galleries ul{
+    position: absolute;
+    margin-left: 0px;
+    display: grid;
+    visibility: hidden;
+    background-color: #083b66;
+    width: 150px;
+}
+
+.galleries li{
+    width: 150px;
+}
+
+.galleries:hover ul{
+    visibility: visible;
+    opacity: 1;
+}
+.content{
+    width: 75%;
+    height: fit-content;
+    margin-top: 30px;
+}
+
+.contentlogo{
+    height: 75px;
+    width: 75px;
+}
+
+.containAbout{
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    background-color: pink;
+    margin-left: 20px;
+    padding: 10px;
+}
+
+.containerAbout{
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.pictAbout{
+    height: 250px;
+    width: 320px;
+    margin-left: 20px;
+}
+
+.justify{
+    text-align: justify;
+}
+
+.italic{
+    font-style: italic;
+    margin-left: 20px;
+}
+
+.btnImg{
+    width: 50px;
+    height: 50px;
+}
+
+.container{
+    height: fit-content;
+    margin-bottom: 30px;
+}
+
+#slider{
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+}
+
+#slider div.slides{
+    position: relative;
+    width: 80%;
+}
+
+#slider div.slides div.slide{
+    display: block;
+    float: left;
+}
+
+.eventPict{
+    height: 300px;
+    width: 200px;
+}
+
+.choose{
+    width: 100px;
+    height: fit-content;
+    padding: 10px;
+    background-color: #083b66;
+    color: white;
+    margin-left: 10px;
+    margin-top: 150px;
+    margin-bottom: 170px;
+}
+
+h4{
+    font-style: italic;
+}
+
+.intro{
+    color: black;
+    text-align: justify;
+    width: 50%;
+}
+
+#myImg1:hover {opacity: 0.7;}
+#myImg2:hover {opacity: 0.7;}
+#myImg3:hover {opacity: 0.7;}
+#myImg4:hover {opacity: 0.7;}
+#myImg5:hover {opacity: 0.7;}
+  
+  .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#regisContainer{
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#submitbutton, #resetbutton{
+    background-color: #083b66;
+    color: white;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+hr{
+    background-color: #083b66;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    height: 3px;
+}
+
+#name, #tipe, #quantity, #address{
+    width: 100%;
+}
+
+#address{
+    margin-top: 5px;
+    height: 100px;
+}
+
+.helper{
+    margin-bottom: 8px;
+}
+
+#result{
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(24, 255, 243);
+    margin-top: 20px;
+}
+
+.footer{
+    height: 50px;
+    width: 100%;
+    background-color: #083b66;
+    color: white;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    margin-top: 45px;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
+
+@media(max-width: 800px){
+    .logo{
+        margin-left: 75px;
+    }
+        
+    .navbar ul{
+        margin-left: 37px;
+    }
+
+    .navbar ul li{
+        width: 125px;
+    }
+
+    .navbar ul li a{
+        margin-left: 0px;
+    }
+
+    .navbar ul li ul{
+        margin-left: 0px;
+        width: 125px;
+    }
+
+    .pictAbout{
+        height: 220px;
+        width: 180px;
+        margin-left: 20px;
+    }
+
+    .containAbout{
+        width: 300px;
+        height: 200px;
+        display: inline-block;
+        background-color: pink;
+        margin-left: 20px;
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}
